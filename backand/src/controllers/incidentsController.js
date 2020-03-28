@@ -11,6 +11,7 @@ module.exports = {
 		// const incidents = await connection('incidents').limit(5).offset((page - 1) * 5).select('*');
 		// const incidents = await connection('incidents').join('ongs', 'ongs.id', '=', 'incidents.ong_id').select(['incidents.*', 'ongs.nome', 'ongs.email', 'ongs.number', 'ongs.city', 'ongs.uf']);
 		// const incidents = await connection('incidents').select('*');
+		console.log(incidents);
 
 		return response.json(incidents);
 	},
