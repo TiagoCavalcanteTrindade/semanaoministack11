@@ -1,0 +1,6 @@
+# on backand folder execute
+npm install
+npm start
+# on front end folder execute
+npm install
+npm start
