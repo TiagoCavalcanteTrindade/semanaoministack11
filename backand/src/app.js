@@ -1,5 +1,6 @@
 const express = require('express');
-const cors = require('cors')
+const cors = require('cors');
+const {errors} = require('celebrate');
 const routes = require('./routes');
 
 const app = express();
@@ -7,6 +8,7 @@ const app = express();
 app.use(cors(/*{origin: 'http://meuapp.com'}*/));
 app.use(express.json()); // para poder utilizar json no body
 app.use(routes); // usa as rotas do arquivo routes .js
+app.use(errors());
 
 /*
 Métodos HTTP:
@@ -31,7 +33,7 @@ Query Builder - table('users').select('*').where('id = 257')
 */
 
 // porta 3333
-app.listen('3333');
+module.exports = app;
 
 // para executar: "node index.js"
 
