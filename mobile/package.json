@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "babel-preset-expo": "~8.0.0",
-    "electron": "^4.0.0-nightly.20181010"
+    "electron": "^7.2.4"
   },
   "private": true
 }
